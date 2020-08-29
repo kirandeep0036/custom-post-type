@@ -24,13 +24,8 @@
 		public function gust_post_enqueue_files() {
 		    wp_enqueue_script( 'ajax-script', GUEST_POSR_PLUGIN_DIR_URL. 'assets/js/jquery.min.js', array('jquery') );
 		    wp_register_script( 'custom-functions', GUEST_POSR_PLUGIN_DIR_URL. 'assets/js/custom-functions.js?'.time() );
-		    wp_register_script( 'jquery.validate', GUEST_POSR_PLUGIN_DIR_URL. 'assets/js/jquery.validate.min.js' );
-		    wp_register_script( 'additional-methods', GUEST_POSR_PLUGIN_DIR_URL. 'assets/js/additional-methods.min.js' );
 		    wp_enqueue_script( 'custom-functions');
-		    wp_enqueue_script( 'jquery.validate');
-		    wp_enqueue_script( 'additional-methods');
 		    wp_enqueue_style( 'guest-post', GUEST_POSR_PLUGIN_DIR_URL. 'assets/css/gues-posts.css?'.time() );
-		    wp_enqueue_style( 'vlidation', GUEST_POSR_PLUGIN_DIR_URL. 'assets/css/site-demos.css' );
 		    wp_localize_script( 'ajax-script', 'my_ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 		}
 		
