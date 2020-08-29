@@ -1,0 +1,33 @@
+#alert-notification {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.outer-section{ position: relative; }
+
+.outer-section .loader {
+    position: absolute;
+    display: none;
+    width: 50%;
+    top: 50%;
+    margin-top: -55%;
+    left: 50%;
+    margin-left: -25%;
+}
+
+span.required{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.faild, span.required {
+	color: red;
+}
+
+.success{
+	color: #22a238;
+}
+
+#createPostFrom .input-group {
+    margin: 10px 0px 40px;
+}
